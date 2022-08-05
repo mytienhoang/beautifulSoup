@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import requests
 
 url = "https://www.indeed.com/jobs?q=Software Developer&l=Charlotte"
@@ -10,3 +11,6 @@ headers = {
 response = requests.request("GET", url, headers=headers, data=payload)
 
 print(response.text)
+=======
+#My first change is adding comments to the arbitrary python file
+>>>>>>> 95b79c02a2596e0db1ff7680a8a68704d7d6bb00
