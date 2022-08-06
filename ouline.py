@@ -34,6 +34,9 @@ def getJobList(role,location):
 def saveDataInJSON(jobDetails):
     #Complete the missing part of this function here
     print("Saving data to JSON")
+    with open("jobDetails.json") as w:
+        json.dump()
+
 
 #main function
 def main():
@@ -43,8 +46,10 @@ def main():
     # ask for the job location
     print("Enter the desired job location")
     location = input()
-    getJobList(role, location)
+    details = getJobList(role, location)
+    saveDataInJSON(details)
     print('So you want a job in ' + location + ', with the occupation title being "' + role + '". ')
+    
     
 if __name__ == '__main__':
     main()
